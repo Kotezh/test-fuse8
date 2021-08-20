@@ -1,0 +1,101 @@
+.cards {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cards__search {
+  margin: 0 0 45px;
+  padding: 0;
+  width: 100%;
+}
+
+.search__form {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.search__input-label {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  color: #363636;
+  margin: 0 20px 0 0;
+  padding: 0;
+}
+
+.search__input {
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin: 0;
+  padding: 0;
+  outline: none;
+  background-color: #f8f8f8;
+  caret-color: #d8d8d8;
+  width: calc(100% - 60px);
+    max-width: 418px;
+  height: 50px;
+}
+
+.cards__list {
+  margin: auto;
+  padding: 0 0 60px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  justify-content: center;
+  column-gap: 22px;
+  row-gap: 38px;
+  position: relative;
+  width: 100%;
+}
+
+.cards__no-data {
+  margin: auto;
+  padding: 0;
+  width: auto;
+  color: #363636;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.cards__btn-more {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.3px;
+  color: #363636;
+  border: 1px solid #d8d8d8;
+  box-sizing: border-box;
+  border-radius: 25px;
+  margin: 0;
+  padding: 12px 30px 12px 33px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+}
+
+.cards__btn-more::after {
+  content: '';
+  margin: 0 0 0 10px;
+  padding: 0 0 0 5px;
+  background-image: url(../../images/chevron.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #f8f8f8;
+  display: inline-block;
+ 
+  height: 15px;
+}
+
+@media screen and (max-width: 1180px) {
+
+}
