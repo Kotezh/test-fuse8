@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/test-fuse8/static/css/main.35c2f217.chunk.css",
+    "main.css": "/test-fuse8/static/css/main.36b74dd3.chunk.css",
     "main.js": "/test-fuse8/static/js/main.5fc3430f.chunk.js",
     "main.js.map": "/test-fuse8/static/js/main.5fc3430f.chunk.js.map",
     "runtime-main.js": "/test-fuse8/static/js/runtime-main.c80a85ce.js",
@@ -10,14 +10,14 @@
     "static/js/3.1bc42a2d.chunk.js": "/test-fuse8/static/js/3.1bc42a2d.chunk.js",
     "static/js/3.1bc42a2d.chunk.js.map": "/test-fuse8/static/js/3.1bc42a2d.chunk.js.map",
     "index.html": "/test-fuse8/index.html",
-    "static/css/main.35c2f217.chunk.css.map": "/test-fuse8/static/css/main.35c2f217.chunk.css.map",
+    "static/css/main.36b74dd3.chunk.css.map": "/test-fuse8/static/css/main.36b74dd3.chunk.css.map",
     "static/js/2.ec881b67.chunk.js.LICENSE.txt": "/test-fuse8/static/js/2.ec881b67.chunk.js.LICENSE.txt",
     "static/media/CardList.css": "/test-fuse8/static/media/chevron.97a27ab1.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.c80a85ce.js",
     "static/js/2.ec881b67.chunk.js",
-    "static/css/main.35c2f217.chunk.css",
+    "static/css/main.36b74dd3.chunk.css",
     "static/js/main.5fc3430f.chunk.js"
   ]
 }
