@@ -1,11 +1,13 @@
 .card {
-  margin: 0;
+  margin: auto;
   padding: 0;
   text-decoration: none;
   background-color: #f2f2f2;
   border: 1px solid #d8d8d8;
   box-sizing: border-box;
   height: 100%;
+  width: 100%;
+  max-width: 400px;
 }
 
 .card__figure {
@@ -41,27 +43,27 @@
 }
 
 .card__title {
-  margin: 0 0 2px;
+  margin: 0 0 3px;
   padding: 0;
   font-weight: 700;
   font-size: 20px;
-  line-height: 27px;
+  line-height: 1.362;
 }
 
 .card__address {
-  margin: 0 0 15px;
+  margin: 0 0 16px;
   padding: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.375;
 }
 
 .card__price {
-  margin: 0 0 7px;
+  margin: 0 0 8px;
   padding: 0;
   font-weight: 400;
   font-size: 16px;
-  line-height: 22px;
+  line-height: 1.375;
 }
 
 .card__price_bold {

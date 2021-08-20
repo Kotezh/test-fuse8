@@ -6,15 +6,20 @@ export default function CardList({ cards }) {
   const [searchedCards, setSearchedCards] = useState([]);
   const [search, setSearch] = useState('');
   const [isNoData, setIsNoData] = useState(false);
-  const [searchValue, setSearchValue] = useState('');
 
-  useEffect((event) => {
-    if (search && (event.target.value.length >= 3)) {
+// useEffect(() => {
+//   setSearchedCards(cards)
+// }, [cards]);
+
+  useEffect(() => {
+    if (search.length >= 3) {
       setSearchedCards(
         cards.filter((m) =>
           m.title?.toLowerCase().includes(search.toLowerCase())
         )
       );
+    } else {
+      setSearchedCards(cards)
     }
   }, [cards, search]);
 
@@ -26,15 +31,14 @@ export default function CardList({ cards }) {
     }
   }, [searchedCards, search]);
 
-  function handleSearchSubmit() {}
+  function handleSearchSubmit(event) {
+    event.preventDefault();
+  }
 
   function handleSearchChange(event) {
-    event.preventDefault();
-    setSearchValue(event.target.value);
-    if(event.target.value.length >= 3) {
 
-    setSearch(searchedCards)
-    }   }
+    setSearch(event.target.value);
+  }
 
   return (
     <section className='cards'>
@@ -47,7 +51,7 @@ export default function CardList({ cards }) {
             id='search'
             type='text'
             name='search'
-            value={searchValue}
+            value={search}
             onChange={handleSearchChange}
             minLength='3'
             maxLength='300'
@@ -62,15 +66,10 @@ export default function CardList({ cards }) {
         {isNoData ? (
           <span className='cards__no-data'>Ничего не найдено</span>
         ) : (
-          cards.map((card) => <Card key={card.id} card={card} />)
+          searchedCards.map((card) => <Card key={card.id} card={card} />)
         )}
       </div>
-      <button
-        // onClick={handleClickMore}
-        className='cards__btn-more'
-      >
-        See more
-      </button>
+      <button className='cards__btn-more'>See more</button>
     </section>
   );
 }

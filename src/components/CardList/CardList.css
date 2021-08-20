@@ -40,7 +40,7 @@
   background-color: #f8f8f8;
   caret-color: #d8d8d8;
   width: calc(100% - 60px);
-    max-width: 418px;
+  max-width: 418px;
   height: 50px;
 }
 
@@ -92,10 +92,9 @@
   background-repeat: no-repeat;
   background-color: #f8f8f8;
   display: inline-block;
- 
+
   height: 15px;
 }
 
 @media screen and (max-width: 1180px) {
-
 }
