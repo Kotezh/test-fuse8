@@ -35,7 +35,7 @@
   box-sizing: border-box;
   border-radius: 25px;
   margin: 0;
-  padding: 0;
+  padding: 0 15px;
   outline: none;
   background-color: #f8f8f8;
   caret-color: #d8d8d8;
