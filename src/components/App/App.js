@@ -8,21 +8,21 @@ export default function App() {
 
   useEffect(() => {
     cardsApi
-    .getCards()
-    .then((cardsLoaded) => {
-      setCards(cardsLoaded);
-    })
-    .catch((err) => {
-      console.log(err);
-    })
-  }, [])
+      .getCards()
+      .then((cardsLoaded) => {
+        setCards(cardsLoaded);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }, []);
 
   return (
-    <div className="app">
-      <header className="header">
-        <h1 className="header__title">Our Latest Developments</h1>
+    <div className='app'>
+      <header className='header'>
+        <h1 className='header__title'>Our Latest Developments</h1>
       </header>
-      <CardList cards={cards}/>
+      <CardList cards={cards} />
     </div>
   );
 }

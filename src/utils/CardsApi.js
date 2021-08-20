@@ -1,21 +1,18 @@
-
 class CardsApi {
   constructor(config) {
     this.url = config.baseUrl;
     this.headers = config.headers;
   }
 
-  _parseResponse(res) {
-    if (res.ok) {
-      return res.json();
-    }
-    return Promise.reject(new Error(`Ошибка: ${res.status}`));
-  }
-
   getCards() {
     return fetch(`${this.url}/homes`, {
       headers: this.headers,
-    }).then(this._parseResponse);
+    }).then((res) => {
+      if (res.ok) {
+        return res.json();
+      }
+      return Promise.reject(new Error(`Ошибка: ${res.status}`));
+    });
   }
 }
 

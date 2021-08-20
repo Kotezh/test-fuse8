@@ -7,10 +7,6 @@ export default function CardList({ cards }) {
   const [search, setSearch] = useState('');
   const [isNoData, setIsNoData] = useState(false);
 
-// useEffect(() => {
-//   setSearchedCards(cards)
-// }, [cards]);
-
   useEffect(() => {
     if (search.length >= 3) {
       setSearchedCards(
@@ -19,7 +15,7 @@ export default function CardList({ cards }) {
         )
       );
     } else {
-      setSearchedCards(cards)
+      setSearchedCards(cards);
     }
   }, [cards, search]);
 
@@ -36,7 +32,6 @@ export default function CardList({ cards }) {
   }
 
   function handleSearchChange(event) {
-
     setSearch(event.target.value);
   }
 
@@ -57,7 +52,6 @@ export default function CardList({ cards }) {
             maxLength='300'
             className='search__input'
             pattern='^.+$'
-            // placeholder='Поиск'
             required
           />
         </form>
